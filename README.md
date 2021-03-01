@@ -16,6 +16,9 @@ Pekka Ruusuvuori, Geert Litjens, Martin Eklund
 
 All images in the dataset are whole-slide images (WSI) and the notebook contains some starting points on using these types of images. To get you up to speed with the dataset of the competition, we have made a [getting started notebook](https://github.com/DIAGNijmegen/panda-challenge/blob/main/notebooks/getting-started-with-the-panda-dataset.ipynb). You can also view/run this notebook directly on the Kaggle platform. For the live version, please see the [Kaggle Getting Started notebook](https://www.kaggle.com/wouterbulten/getting-started-with-the-panda-dataset).
 
+## Computing metrics
+
+To generate metrics for a team or a group of teams, the `compute-metrics-all-teams.py` script can be used. The script computes scores for all datasets and teams defined in the [config](src/config.py).
 
 ## How to cite this work?
 
