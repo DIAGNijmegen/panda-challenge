@@ -1,3 +1,5 @@
+![PANDA Challenge](media/panda_github.jpg)
+
 # The PANDA Challenge: Prostate cancer diagnosis using the Gleason grading system
 
 Code related to analysis of algorithms sourced through the PANDA challenge.
