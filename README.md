@@ -16,9 +16,30 @@ Pekka Ruusuvuori, Geert Litjens, Martin Eklund
 
 All images in the dataset are whole-slide images (WSI) and the notebook contains some starting points on using these types of images. To get you up to speed with the dataset of the competition, we have made a [getting started notebook](https://github.com/DIAGNijmegen/panda-challenge/blob/main/notebooks/getting-started-with-the-panda-dataset.ipynb). You can also view/run this notebook directly on the Kaggle platform. For the live version, please see the [Kaggle Getting Started notebook](https://www.kaggle.com/wouterbulten/getting-started-with-the-panda-dataset).
 
+As a quickstart, the following 4-line snippet can be used to load a patch from one of the images:
+
+```python
+import openslide
+
+# Open the image (does not yet read the image into memory)
+image = openslide.OpenSlide('005e66f06bce9c2e49142536caf2f6ee.tiff')
+
+# Read a specific region of the image starting at upper left coordinate (x=17800, y=19500) on level 0 and extracting a 256*256 pixel patch.
+# At this point image data is read from the file and loaded into memory.
+patch = image.read_region((17800,19500), 0, (256, 256))
+
+# Display the image
+display(patch)
+
+# Close the opened slide after use
+image.close()
+```
+Output:
+
+![image patch](media/biopsy_patch.png)
 ## Computing metrics
 
-To generate metrics for a team or a group of teams, the `compute-metrics-all-teams.py` script can be used. The script computes scores for all datasets and teams defined in the [config](src/config.py).
+To generate metrics for a team or a group of teams, the [`compute-metrics-all-teams.py`](src/compute-metrics-all-teams.py) script can be used. The script computes scores for all datasets and teams defined in the [config](src/evaluation/config.py).
 
 ## How to cite this work?
 

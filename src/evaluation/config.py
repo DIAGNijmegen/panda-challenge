@@ -32,9 +32,9 @@ METRICS = [
 # Datasets used in the analysis
 DATASETS = {
     'example': {
-        'reference': 'reference.csv',
-        'dir': 'example',
-        'usage': 'Public',
+        'reference': 'example-reference.csv',
+        'dir': 'example-set',
+        'usage': None,
         'friendly_name': "Example data set",
         'image_ids': None,
         'generate_confusion_matrix': False,
@@ -43,8 +43,12 @@ DATASETS = {
 
 # Teams that are evaluated
 TEAMS = {
-   "example":{
+   "example-team":{
       "friendly_name": "Example team",
-      "identifier": "example"
+      "identifier": "example-team"
    },
+    "example-team-2": {
+        "friendly_name": "Example team 2",
+        "identifier": "example-team-2"
+    },
 }

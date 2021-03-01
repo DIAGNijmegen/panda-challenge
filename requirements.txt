@@ -68,3 +68,4 @@ traitlets==5.0.5
 urllib3==1.26.3
 wcwidth==0.2.5
 webencodings==0.5.1
+openpyxl==3.0.5

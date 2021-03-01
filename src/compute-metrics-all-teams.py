@@ -22,8 +22,8 @@ if __name__ == '__main__':
     logging.info("Computing metrics for all teams across all datasets.")
 
     parser = argparse.ArgumentParser(description='Process submissions.')
-    parser.add_argument('--base_dir', help='Path to the base dir of the PANDA repo.', default='.')
-    parser.add_argument('--output', help='Path to write the results to.', default='./results')
+    parser.add_argument('--base_dir', help='Path to the base dir of the PANDA repo.', default='../')
+    parser.add_argument('--output', help='Path to write the results to.', default='../results')
     parser.add_argument('--n_bootstraps', help='Number of samples during bootstrapping.', type=int, default=5000)
     parser.add_argument('--pool_size', help='Size of the pool for multiprocessing', type=int, default=16)
     args = parser.parse_args()
