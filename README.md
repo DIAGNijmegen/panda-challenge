@@ -41,8 +41,9 @@ Output:
 
 To generate metrics for a team or a group of teams, the [`compute-metrics-all-teams.py`](src/compute-metrics-all-teams.py) script can be used. The script computes scores for all datasets and teams defined in the [config](src/evaluation/config.py).
 
-This dataset contains somme dummy data for two fake teams in the `algorithms` directory. After running the script, the metrics of those teams will be outputted to the `results` directory.
-## How to cite this work?
+As an example, this dataset contains dummy data for two fake teams in the `algorithms` directory. The reference for this dummy dataset is derived from the training set. After running the script, the metrics of the teams will be outputted to the `results` directory.
+
+## How to cite this work
 
 The PANDA dataset is currently under embargo, awaiting publication of the study results. Please see this Kaggle post for more information: https://www.kaggle.com/c/prostate-cancer-grade-assessment/discussion/201117
 
